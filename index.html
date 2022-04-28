@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Test</title>
+    <style>
+        html, body, div, span, applet, object, iframes, h1, h2, h3, h4, h5, h6,
+        p, blockquote, pre, a, abbr, acronym, address, big, quotes, code, del,
+        dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, u,
+        i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+        caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+        details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+        output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            do: inherit;
+            vertical-align: baseline;
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup,
+        menu, nav, section {
+            display: block;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote :before, blockquote :after, q :before, q :after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+
+        .card {
+            height: 280px;
+            width: 200px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 20px;
+            position: relative;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            overflow: hidden;
+        }
+
+        .card-header {
+            width: 100%;
+            height: 200px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .chr-img {
+            display: inline-block;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .text-wrap {
+            line-height: 25px;
+            margin: 0px 10px 0px 10px;
+        }
+
+        input.bookmark-btn {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            right: 12px;
+            top:12px;
+            background: url("../img/star.png") no-repeat center;
+            background-size: 24px;
+            border: none;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        input.like-btn {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            background: url("../img/like.png") no-repeat center;
+            background-size: 22px;
+            border: none;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .username {
+            color: #808080;
+            font-size: 14px;
+            /*font-style: italic;*/
+        }
+
+        .cnt {
+        }
+
+        .like-cnt {
+              margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="card-header">
+        <img class="chr-img" src="../img/1.png" alt="캐릭터 이미지">
+        <input type="button" class="bookmark-btn">
+    </div>
+    <div class="text-wrap">
+        <p class="comment">제목or코멘트</p>
+        <p class="username">닉네임</p>
+        <div class="cnt">
+            <p><input type="button" class="like-btn"></p>
+            <p class="like-cnt">111</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
